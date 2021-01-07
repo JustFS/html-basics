@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Le titre de la page  -->
+  <title>Cours HTML</title>
+  <!-- Icones de l'onglet -->
+  <link rel="shortcut icon" href="html-logo.png">
+</head>
+
+<body>
+  <section>
+    <div>
+      <h1>Texte - Titre H1</h1>
+      <p><em>em pour mettre en italique</em>, <strong>strong pour mettre en gras</strong> <span>L'élement en span ne
+          revient pas à la ligne</span>.</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cumque ratione veniam officiis nulla a
+        debitis at facilis sed dignissimos.</p>
+    </div>
+
+    <div>
+      <h2>Photo - Titre H2</h2>
+      <img src="./img-1.jpg" alt="image-arbre" height="200">
+    </div>
+
+    <div>
+      <h3>Liste - Titre H3</h3>
+      <ul>
+        <li>UL = unordered list</li>
+        <li>UL = unordered list</li>
+        <li>UL = unordered list</li>
+      </ul>
+      <ol>
+        <li>OL = ordered list</li>
+        <li>OL = ordered list</li>
+        <li>OL = ordered list</li>
+      </ol>
+    </div>
+
+    <div>
+      <h4><span>&#9814;</span> Liens - Titre H4</h4>
+      <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheatsheet</a>
+      <br>
+      <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Icones natifs en HTML</a>
+    </div>
+
+    <div>
+      <h5>Tableaux - Titre H5</h5>
+      <table border="2" style="text-align: center;">
+        <!-- Légende -->
+        <caption>Populations d'europe</caption>
+        <!-- En-tête -->
+        <thead>
+          <tr>
+            <th>Pays</th>
+            <th>Population</th>
+          </tr>
+        </thead>
+        <!-- Corps du tableau -->
+        <tbody>
+          <tr>
+            <td>France</td>
+            <td>66M</td>
+          </tr>
+          <tr>
+            <td>Allemagne</td>
+            <td>82M</td>
+          </tr>
+          <tr>
+            <td>Espagne</td>
+            <td>45M</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <h6>Vidéo - Titre H6</h6>
+      <video src="video.mp4" height="150" autoplay loop muted></video>
+    </div>
+  </section>
+  <br>
+  <!-- Formulaires en HTML -->
+  <section>
+    <h2>Formulaire</h2>
+    <form action="/action.php" method="post">
+      <label for="name">Nom</label><input id="name" type="text" placeholder="Entrez votre nom" /> <br />
+      <label for="age">Age</label><input id="age" max="99" min="1" step="1" type="number" value="18" /> <br />
+
+      <!-- Input select -->
+      <label for="gender">Genre</label>
+      <select id="gender">
+        <option selected="selected" value="Homme">Homme</option>
+        <option value="Femme">Femme</option>
+      </select><br />
+
+      <!-- Input radio -->
+      <div>
+        <input type="radio" name="type" id="human" checked>
+        <label for="human">Humain</label>
+
+        <input type="radio" name="type" id="dog">
+        <label for="dog">Chien</label>
+
+        <input type="radio" name="type" id="cat">
+        <label for="cat">Chat</label>
+      </div>
+
+      <textarea cols="20" rows="5" placeholder="Votre message..."></textarea><br />
+
+      <!-- Input Checkbox -->
+      <label><input type="checkbox" value="tandc" />Accept terms</label> <br />
+      <input type="submit" value="Submit" />
+    </form>
+  </section>
+  <br>
+  <!-- Mail & envoi de fichiers -->
+  <section>
+    <a href="mailto:fs@gmail.com">Ecrivez-moi !</a>
+    <br>
+    <a href="notice.txt" download="test">Télécharger la notice</a>
+
+  </section>
+
+</body>
+
+</html>
