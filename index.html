@@ -42,14 +42,14 @@
     <div>
       <h4>Tableaux - Titre H4</h4>
       <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
-        <!-- Légende -->
-        <caption>Tableau en HTML</caption>
-        <tbody>
+        <thead>
           <tr>
             <th>Col 1</th>
             <th>Col 2</th>
             <th>Col 3</th>
           </tr>
+        </thead>
+        <tbody>
           <tr>
             <td rowspan="2">Row 1 Cell 1</td>
             <td>Row 1 Cell 2</td>
@@ -120,6 +120,56 @@
     <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
 
   </footer>
+
+  <table border="1" cellpadding="5" cellspacing="0">
+    <thead>
+      <tr>
+        <th>Firm</th>
+        <th>Org</th>
+        <th>Lob</th>
+        <th>Sub Lob</th>
+        <th>Business Plans</th>
+        <th>Business Components</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="11">XYZ</td>
+        <td rowspan="5">CST</td>
+        <td rowspan="3">CT</th>
+        <td>ADS</td>
+        <td>1</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>BTO</th>
+        <td>2</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>CSI</th>
+        <td>3</td>
+        <td>6</td>
+      </tr>
+      <tr>
+        <td rowspan="2">VCT</th>
+        <td>ADS</td>
+        <td>4</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>BTO</th>
+        <td>5</td>
+        <td>15</td>
+      </tr>
+      <tr class="subTotatlRow">
+        <td colspan="3" class="sub-total-text">Sub Total</th>
+        <td>6</td>
+        <td>15</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 
