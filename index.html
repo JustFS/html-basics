@@ -1,172 +1,60 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Le titre de la page  -->
-  <title>Cours HTML</title>
-  <!-- Icone de l'onglet -->
-  <link rel="shortcut icon" href="html-logo.png">
+  <title>Tableaux en HTML</title>
 </head>
 
-<body>
-  <header>
-    <h1>Texte - Titre H1</h1>
-    <p><em>em pour mettre en italique</em>, <strong>strong pour mettre en gras</strong> <span>L'élement en span ne
-        revient pas à la ligne</span>.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem cumque ratione veniam officiis nulla a
-      debitis at facilis sed dignissimos.</p>
-  </header>
+<body style="padding: 50px">
 
-  <section>
-    <div>
-      <h2>Photo - Titre H2</h2>
-      <img src="./img-1.jpg" alt="image-arbre" height="200">
-    </div>
-
-    <div>
-      <h3>Liste - Titre H3</h3>
-      <ul>
-        <li>UL = unordered list</li>
-        <li>UL = unordered list</li>
-        <li>UL = unordered list</li>
-      </ul>
-      <ol>
-        <li>OL = ordered list</li>
-        <li>OL = ordered list</li>
-        <li>OL = ordered list</li>
-      </ol>
-    </div>
-
-    <div>
-      <h4>Tableaux - Titre H4</h4>
-      <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
-        <thead>
-          <tr>
-            <th>Col 1</th>
-            <th>Col 2</th>
-            <th>Col 3</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td rowspan="2">Row 1 Cell 1</td>
-            <td>Row 1 Cell 2</td>
-            <td>Row 1 Cell 3</td>
-          </tr>
-          <tr>
-            <td>Row 2 Cell 2</td>
-            <td>Row 2 Cell 3</td>
-          </tr>
-          <tr>
-            <td colspan="3">Row 3 Cell 1</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div>
-      <h5><span>&#9814;</span> Liens - Titre H5</h5>
-      <a href="https://htmlcheatsheet.com/" target="_blank">HTML Cheatsheet</a>
-      <br>
-      <a href="https://www.toptal.com/designers/htmlarrows/symbols/" target="_blank">Icones natifs en HTML</a>
-    </div>
-
-    <div>
-      <h6>Vidéo - Titre H6</h6>
-      <video src="video.mp4" height="150" autoplay loop muted></video>
-    </div>
-  </section>
-  <br>
-  <!-- Formulaires en HTML -->
-  <section>
-    <h2>Formulaire</h2>
-    <form action="/action.php" method="post">
-      <label for="name">Nom</label><input id="name" type="text" placeholder="Entrez votre nom" /><br>
-      <label for="age">Age</label><input id="age" max="99" min="1" step="1" type="number" value="18" /><br>
-
-      <!-- Input select -->
-      <label for="gender">Genre</label>
-      <select id="gender">
-        <option selected="selected" value="Homme">Homme</option>
-        <option value="Femme">Femme</option>
-      </select><br>
-
-      <!-- Input radio -->
-      <div>
-        <input type="radio" name="type" id="human" checked>
-        <label for="human">Humain</label>
-
-        <input type="radio" name="type" id="dog">
-        <label for="dog">Chien</label>
-
-        <input type="radio" name="type" id="cat">
-        <label for="cat">Chat</label>
-      </div>
-
-      <textarea cols="20" rows="5" placeholder="Votre message..."></textarea><br>
-
-      <!-- Input Checkbox -->
-      <label><input type="checkbox" />Accepter les CGV</label> <br />
-      <input type="submit" value="Submit" />
-    </form>
-  </section>
-  <br>
-  <!-- Mail & envoi de fichiers -->
-  <footer>
-    <a href="mailto:fs@gmail.com">Ecrivez-moi !</a>
-    <br>
-    <a href="notice.txt" download="nom-du-fichier">Télécharger la notice</a>
-
-  </footer>
-
-  <table border="1" cellpadding="5" cellspacing="0">
+  <table border="1" cellpadding="10" center cellspacing="2">
     <thead>
       <tr>
-        <th>Firm</th>
-        <th>Org</th>
-        <th>Lob</th>
-        <th>Sub Lob</th>
-        <th>Business Plans</th>
-        <th>Business Components</th>
+        <th>Entreprise</th>
+        <th>Division</th>
+        <th>Ref</th>
+        <th>Franchise</th>
+        <th>Employés</th>
+        <th>CA (en millionsd'€)</th>
       </tr>
     </thead>
 
     <tbody>
       <tr>
-        <td rowspan="11">XYZ</td>
-        <td rowspan="5">CST</td>
-        <td rowspan="3">CT</th>
+        <td rowspan="11">Google</td>
+        <td rowspan="5">Google Ltd.</td>
+        <td rowspan="3">YT</th>
         <td>ADS</td>
-        <td>1</td>
-        <td>10</td>
+        <td>1052</td>
+        <td>10,7</td>
       </tr>
       <tr>
         <td>BTO</th>
-        <td>2</td>
-        <td>15</td>
+        <td>204</td>
+        <td>150,1</td>
       </tr>
       <tr>
         <td>CSI</th>
-        <td>3</td>
-        <td>6</td>
+        <td>3543</td>
+        <td>60,0</td>
       </tr>
       <tr>
-        <td rowspan="2">VCT</th>
+        <td rowspan="2">MAP</th>
         <td>ADS</td>
-        <td>4</td>
-        <td>10</td>
+        <td>48</td>
+        <td>10,7</td>
       </tr>
       <tr>
         <td>BTO</th>
-        <td>5</td>
-        <td>15</td>
+        <td>5471</td>
+        <td>15,8</td>
       </tr>
       <tr class="subTotatlRow">
-        <td colspan="3" class="sub-total-text">Sub Total</th>
-        <td>6</td>
-        <td>15</td>
+        <td colspan="3">Total</th>
+        <td>10318</td>
+        <td>247,3</td>
       </tr>
     </tbody>
   </table>
