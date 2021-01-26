@@ -4,60 +4,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tableaux en HTML</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>SpaceX - Travel Agency</title>
+
+  <link rel="shortcut icon" href="./img/icon.png">
+  <link href="./style.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body style="padding: 50px">
+<body>
+  <header>
+    <div class="title">
+      <a href="http://www.spacex.com" target="_blank">
+        <img src="./img/logo.png">
+      </a>
+      <h1>Travel agency</h1>
+    </div>
+    <div class="nav">
+      <ul>
+        <li><a href="#">Store</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </div>
+    <div class="line"></div>
+  </header>
+  <main>
 
-  <table border="1" cellpadding="10" center cellspacing="2">
-    <thead>
-      <tr>
-        <th>Entreprise</th>
-        <th>Division</th>
-        <th>Ref</th>
-        <th>Franchise</th>
-        <th>Employés</th>
-        <th>CA (en millionsd'€)</th>
-      </tr>
-    </thead>
+    <div class="offers">
+      <div class="cards-container">
+        <div class="card">
+          <div class="perspective-3d" style="background:url('./img/off1.jpg');">
+            <h2>A weekend in space</h2>
+            <span>from $5.000</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="perspective-3d" style="background:url('./img/off2.jpg')">
+            <h2>Take a rest on the moon</h2>
+            <span>from $15.000</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="perspective-3d" style="background:url('./img/off3.jpg');">
+            <h2>Holidays on Mars</h2>
+            <span>from $45.000</span>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <tbody>
-      <tr>
-        <td rowspan="11">Google</td>
-        <td rowspan="5">Google Ltd.</td>
-        <td rowspan="3">YT</th>
-        <td>ADS</td>
-        <td>1052</td>
-        <td>10,7</td>
-      </tr>
-      <tr>
-        <td>BTO</th>
-        <td>204</td>
-        <td>150,1</td>
-      </tr>
-      <tr>
-        <td>CSI</th>
-        <td>3543</td>
-        <td>60,0</td>
-      </tr>
-      <tr>
-        <td rowspan="2">MAP</th>
-        <td>ADS</td>
-        <td>48</td>
-        <td>10,7</td>
-      </tr>
-      <tr>
-        <td>BTO</th>
-        <td>5471</td>
-        <td>15,8</td>
-      </tr>
-      <tr class="subTotatlRow">
-        <td colspan="3">Total</th>
-        <td>10318</td>
-        <td>247,3</td>
-      </tr>
-    </tbody>
-  </table>
+    <div class="button">
+      <a href="http://www.spacex.com" target="_blank">
+        <svg height="60" width="320">
+          <rect class="button__rect" height="60" width="320" />
+        </svg>
+        <div class="button__text">GET STARTED</div>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    <div class="network">
+      <a href="http://twitter.fr"><i class="fa fa-twitter"></i></a>
+      <a href="http://facebook.fr"><i class="fa fa-facebook"></i></a>
+      <a href="http://flickr.fr"><i class="fa fa-flickr"></i></a>
+      <a href="http://instagram.com"><i class="fa fa-instagram"></i></a>
+      <a href="https://www.youtube.com/channel/UCHGLV13U7YRbjrKpqfbtyYg" target="_blank">j.azambourg © 2021</a>
+    </div>
+  </footer>
 
 </body>
 
