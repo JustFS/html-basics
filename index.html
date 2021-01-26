@@ -41,29 +41,26 @@
 
     <div>
       <h4>Tableaux - Titre H4</h4>
-      <table border="2" style="text-align: center;">
+      <table border="4" cellpadding="10" cellspacing="4" style="text-align: center;">
         <!-- Légende -->
-        <caption>Populations d'europe</caption>
-        <!-- En-tête -->
-        <thead>
-          <tr>
-            <th>Pays</th>
-            <th>Population</th>
-          </tr>
-        </thead>
-        <!-- Corps du tableau -->
+        <caption>Tableau en HTML</caption>
         <tbody>
           <tr>
-            <td>France</td>
-            <td>66M</td>
+            <th>Col 1</th>
+            <th>Col 2</th>
+            <th>Col 3</th>
           </tr>
           <tr>
-            <td>Allemagne</td>
-            <td>82M</td>
+            <td rowspan="2">Row 1 Cell 1</td>
+            <td>Row 1 Cell 2</td>
+            <td>Row 1 Cell 3</td>
           </tr>
           <tr>
-            <td>Espagne</td>
-            <td>45M</td>
+            <td>Row 2 Cell 2</td>
+            <td>Row 2 Cell 3</td>
+          </tr>
+          <tr>
+            <td colspan="3">Row 3 Cell 1</td>
           </tr>
         </tbody>
       </table>
@@ -86,15 +83,15 @@
   <section>
     <h2>Formulaire</h2>
     <form action="/action.php" method="post">
-      <label for="name">Nom</label><input id="name" type="text" placeholder="Entrez votre nom" /> <br />
-      <label for="age">Age</label><input id="age" max="99" min="1" step="1" type="number" value="18" /> <br />
+      <label for="name">Nom</label><input id="name" type="text" placeholder="Entrez votre nom" /><br>
+      <label for="age">Age</label><input id="age" max="99" min="1" step="1" type="number" value="18" /><br>
 
       <!-- Input select -->
       <label for="gender">Genre</label>
       <select id="gender">
         <option selected="selected" value="Homme">Homme</option>
         <option value="Femme">Femme</option>
-      </select><br />
+      </select><br>
 
       <!-- Input radio -->
       <div>
@@ -108,7 +105,7 @@
         <label for="cat">Chat</label>
       </div>
 
-      <textarea cols="20" rows="5" placeholder="Votre message..."></textarea><br />
+      <textarea cols="20" rows="5" placeholder="Votre message..."></textarea><br>
 
       <!-- Input Checkbox -->
       <label><input type="checkbox" />Accepter les CGV</label> <br />
