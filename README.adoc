@@ -3,7 +3,7 @@
 == Code source memo
 
 index.html
-[[source,html]
+[source,html]
 ----
 <!DOCTYPE html>
 <html lang="fr">
